@@ -1,3 +1,180 @@
 body{
-    background-color:salmon;
+    background-color: white;
+}
+.marco{
+    border: 2px solid black;
+    height: 98vh;
+    margin: 10px;
+}
+
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin: 20%;
+    
+}
+
+.animacion{
+    color: black;
+    position: relative;
+
+}
+
+.animacion::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid black;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    animation: animacion 4s 1 steps(14);
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes animacion {
+    0%{ left: 0;
+
+    }
+    100%{
+        left: 100%;
+
+    }
+}
+
+.acercademi{
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 30px;;
+    left: 0;
+    
+    
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.acercademi:hover {
+    background-color:purple;
+}
+
+.contacto{
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 30px;;
+    right: 0;
+    
+    
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.contacto:hover {
+    background-color:purple;
+}
+    
+    
+.img {
+width: 250px;
+height: 250px;
+position: relative;
+}
+
+.ai{
+    position: absolute;
+    animation-name: ai;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes ai {
+    0%{ left:0;
+        bottom: 0;
+    }
+    100%{ left: 5%;
+        bottom: 11%;
+    }
+}
+.html{
+    position: absolute;
+    animation-name: html;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+@keyframes html {
+    0%{ left:0;
+        bottom: 0;
+    }
+    100%{ left: 20%;
+        bottom: 0%;
+    }
+}
+.css{
+    position: absolute;
+    animation-name: css;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+@keyframes css {
+    0%{ left:0;
+        bottom: 0;
+    }
+    100%{ left: 40%;
+        bottom: 10%;
+    }
+}
+.js{
+    position: absolute;
+    animation-name: js;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+@keyframes js {
+    0%{ left:0;
+        bottom: 0;
+    }
+    100%{ left: 60%;
+        bottom: 0%;
+    }
+}
+.ps{
+    position: absolute;
+    animation-name: ps;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+@keyframes ps {
+    0%{ left:0;
+        bottom: 0;
+    }
+    100%{ left: 78%;
+        bottom: 10%;
+    }
 }
