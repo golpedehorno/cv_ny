@@ -46,6 +46,7 @@ body{
 }
 
 .acercademi{
+    position: relative;
     background-color: black;
     width: 200px;
     height: 30px;
@@ -58,6 +59,7 @@ body{
     left: 0;
     
     
+    
 }
 a:link, a:visited, a:active{
     text-decoration: none;
@@ -66,6 +68,28 @@ a:link, a:visited, a:active{
 }
 .acercademi:hover {
     background-color:purple;
+}
+.puntero{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    animation-name: puntero;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 12s;
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+    transform: rotate(-10deg);
+
+}
+@keyframes puntero {
+    0%{ opacity: 0;
+
+    }
+    100%{
+       opacity: 100%;
+    }
 }
 
 .contacto{
@@ -104,6 +128,8 @@ position: relative;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 5s;
+    width: 0;
+    height: 0;
 }
 
 @keyframes ai {
@@ -112,6 +138,8 @@ position: relative;
     }
     100%{ left: 5%;
         bottom: 11%;
+        width: 250px;
+        height: 250px;
     }
 }
 .html{
@@ -120,6 +148,8 @@ position: relative;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 6s;
+    width: 0;
+    height: 0;
 }
 
 @keyframes html {
@@ -128,6 +158,8 @@ position: relative;
     }
     100%{ left: 20%;
         bottom: 0%;
+        width: 250px;
+        height: 250px;
     }
 }
 .css{
@@ -136,6 +168,8 @@ position: relative;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 7s;
+    width: 0;
+    height: 0;
 }
 
 @keyframes css {
@@ -144,6 +178,8 @@ position: relative;
     }
     100%{ left: 40%;
         bottom: 10%;
+        width: 250px;
+        height: 250px;
     }
 }
 .js{
@@ -152,6 +188,8 @@ position: relative;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 8s;
+    width: 0;
+    height: 0;
 }
 
 @keyframes js {
@@ -160,6 +198,8 @@ position: relative;
     }
     100%{ left: 60%;
         bottom: 0%;
+        width: 250px;
+        height: 250px;
     }
 }
 .ps{
@@ -168,13 +208,27 @@ position: relative;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 8s;
+    width: 0;
+    height: 0;
 }
 
 @keyframes ps {
-    0%{ left:0;
+    0%{
+        left:0;
         bottom: 0;
     }
     100%{ left: 78%;
         bottom: 10%;
+        width: 250px;
+        height: 250px;
     }
 }
+/*.blanco{
+    position: absolute;
+    left:0;
+    bottom:-10;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+
+}/*
