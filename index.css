@@ -232,3 +232,39 @@ position: relative;
     height: 250px;
 
 }/*
+
+/* PAGINA ACERCA DE MI*/
+.titulo2{
+    color: purple;
+    text-transform: uppercase;
+    font-size: 50px;
+    border: 2px solid black;
+    height: 300px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.p{
+    background-color: purple;
+    color: white;
+    height: 300px;
+    border: 2px solid black;
+    width: 100vw;
+    padding: 10px;
+}
+.contenedor_demi{
+    margin: 120px 20px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.demi{
+    justify-content: center;
+}
+.contenedor_educ{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+}
